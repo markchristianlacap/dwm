@@ -25,7 +25,7 @@ static const int topbar             = 1;     /* 0 means bottom bar */
 static const char *fonts[]          = { "JetbrainsMono Nerd Font:size=8" };
 static const char dmenufont[]       = "JetbrainsMono Nerd Font:size=8";
 static const char col_gray1[]       = "#282a36";
-static const char col_gray2[]       = "#f8f8f2";
+static const char col_gray2[]       = "#44475a";
 static const char col_gray3[]       = "#f8f8f2";
 static const char col_gray4[]       = "#282a36";
 static const char col_cyan[]        = "#bd93f9";
