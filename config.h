@@ -155,10 +155,12 @@ static const Key keys[] = {
 	{ MODKEY, 											XK_e, 		 spawn, 				 SHCMD("thunar")},
 	{ MODKEY, 											XK_t, 		 spawn, 				 SHCMD("/bin/kitty tmux attach")},
 	{ MODKEY|ShiftMask, 						XK_t, 		 spawn, 				 SHCMD("/bin/kitty tmux")},
+	{ MODKEY|ShiftMask, 						XK_t, 		 spawn, 				 SHCMD("/bin/kitty tmux")},
 	{ MODKEY|ShiftMask, 						XK_s, 		 spawn, 				 {.v = powermenu } },
 	{ 0,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
 	{ 0,                       XF86XK_AudioMute, spawn, {.v = mutevol } },
-	{ 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } }
+	{ 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
+	{ 0, 														0x0000ff61, spawn, 				 SHCMD("flameshot gui") }
 };
 
 /* button definitions */
