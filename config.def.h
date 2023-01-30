@@ -121,7 +121,7 @@ static const Key keys[] = {
 	{ MODKEY|Mod4Mask|ShiftMask,    XK_0,      defaultgaps,    {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,             					XK_q,      killclient,     {0} },
-	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
+	{ MODKEY,                       XK_r,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY|ShiftMask,             XK_f,  setlayout,      		 {0} },
@@ -144,7 +144,10 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {1} }, 
 	{ MODKEY, 											XK_v, 		 spawn, 				 SHCMD("code")},
-	{ MODKEY, 											XK_p, 		 spawn, 				 SHCMD("firefox")}
+	{ MODKEY, 											XK_p, 		 spawn, 				 SHCMD("firefox")},
+	{ MODKEY, 											XK_e, 		 spawn, 				 SHCMD("thunar")},
+	{ MODKEY, 											XK_t, 		 spawn, 				 SHCMD("/bin/kitty tmux attach")},
+	{ MODKEY|ShiftMask, 						XK_t, 		 spawn, 				 SHCMD("/bin/kitty tmux")},
 };
 
 /* button definitions */
