@@ -22,8 +22,8 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;     /* 0 means no bar */
 static const int topbar             = 1;     /* 0 means bottom bar */
-static const char *fonts[]          = { "JetbrainsMono Nerd Font:size=8" };
-static const char dmenufont[]       = "JetbrainsMono Nerd Font:size=8";
+static const char *fonts[]          = { "JetbrainsMono Nerd Font:size=10" };
+static const char dmenufont[]       = "JetbrainsMono Nerd Font:size=10";
 static const char col_gray1[]       = "#282a36";
 static const char col_gray2[]       = "#44475a";
 static const char col_gray3[]       = "#f8f8f2";
@@ -160,7 +160,8 @@ static const Key keys[] = {
 	{ 0,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
 	{ 0,                       XF86XK_AudioMute, spawn, {.v = mutevol } },
 	{ 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
-	{ 0, 														0x0000ff61, spawn, 				 SHCMD("flameshot gui") }
+	{ 0, 														0x0000ff61, spawn, 				 SHCMD("flameshot gui") },
+	{ MODKEY, 											XK_n, 		 spawn, 				 SHCMD("pavucontrol") }
 };
 
 /* button definitions */
