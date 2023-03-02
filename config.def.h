@@ -161,7 +161,8 @@ static const Key keys[] = {
 	{ 0,                       XF86XK_AudioMute, spawn, {.v = mutevol } },
 	{ 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
 	{ 0, 														0x0000ff61, spawn, 				 SHCMD("flameshot gui") },
-	{ MODKEY, 											XK_n, 		 spawn, 				 SHCMD("pavucontrol") }
+	{ MODKEY, 											XK_n, 		 spawn, 				 SHCMD("pavucontrol") },
+	{ Mod1Mask, 											XK_l, 		 spawn, 				 SHCMD("slock") }
 };
 
 /* button definitions */
