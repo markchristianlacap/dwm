@@ -22,8 +22,8 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;     /* 0 means no bar */
 static const int topbar             = 1;     /* 0 means bottom bar */
-static const char *fonts[]          = { "JetbrainsMono Nerd Font:size=10" };
-static const char dmenufont[]       = "JetbrainsMono Nerd Font:size=10";
+static const char *fonts[]          = { "Inconsolata Nerd Font:size=10" };
+static const char dmenufont[]       = "Inconsolata Nerd Font:size=10";
 static const char col_gray1[]       = "#282a36";
 static const char col_gray2[]       = "#44475a";
 static const char col_gray3[]       = "#f8f8f2";
@@ -150,8 +150,8 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {1} }, 
-	{ MODKEY, 											XK_v, 		 spawn, 				 SHCMD("code")},
-	{ MODKEY, 											XK_p, 		 spawn, 				 SHCMD("firefox")},
+	{ MODKEY, 											XK_v, 		 spawn, 				 SHCMD("prime-run code")},
+	{ MODKEY, 											XK_p, 		 spawn, 				 SHCMD("prime-run firefox")},
 	{ MODKEY, 											XK_e, 		 spawn, 				 SHCMD("thunar")},
 	{ MODKEY, 											XK_t, 		 spawn, 				 SHCMD("/bin/kitty tmux attach")},
 	{ MODKEY|ShiftMask, 						XK_t, 		 spawn, 				 SHCMD("/bin/kitty tmux")},
