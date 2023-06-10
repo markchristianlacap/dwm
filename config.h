@@ -22,13 +22,13 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;     /* 0 means no bar */
 static const int topbar             = 1;     /* 0 means bottom bar */
-static const char *fonts[]          = { "JetbrainsMono Nerd Font:size=10" };
-static const char dmenufont[]       = "JetbrainsMono Nerd Font:size=10";
-static const char col_gray1[]       = "#282a36";
+static const char *fonts[]          = { "Inconsolata Nerd Font:size=10" };
+static const char dmenufont[]       = "Inconsolata Nerd Font:size=10";
+static const char col_gray1[]       = "#1a1b26";
 static const char col_gray2[]       = "#44475a";
 static const char col_gray3[]       = "#f8f8f2";
-static const char col_gray4[]       = "#282a36";
-static const char col_cyan[]        = "#bd93f9";
+static const char col_gray4[]       = "#cfc9c2";
+static const char col_cyan[]        = "#414869";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -45,10 +45,10 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "Blueberry.py",  NULL,  NULL,       0,       			1,           -1 },
-	{ "Pavucontrol",   NULL,  NULL,       0,       			1,           -1 },
+	{ "Gimp",     		 NULL,    NULL,       0,            1,           -1 },
+	{ "Firefox",  		 NULL,    NULL,       1 << 8,       0,           -1 },
+	{ "Blueberry.py",  NULL,  	NULL,       0,       			1,           -1 },
+	{ "Pavucontrol",   NULL,  	NULL,       0,       			1,           -1 },
 };
 
 /* layout(s) */
@@ -64,6 +64,7 @@ static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[]=",      tile },    /* first entry is default */
 	{ "[M]",      monocle },
+	{ "[][]=",    tilewide },
 	{ "[@]",      spiral },
 	{ "[\\]",     dwindle },
 	{ "H[]",      deck },
@@ -131,6 +132,8 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_r,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
+	{ MODKEY,                       XK_w,      setlayout,      {.v = &layouts[3]} },
+	{ MODKEY,                       XK_g,      setlayout,      {.v = &layouts[12]} },
 	{ MODKEY|ShiftMask,             XK_f,  		 setlayout,      		 {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
