@@ -133,6 +133,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_w,      setlayout,      {.v = &layouts[3]} },
+	{ MODKEY,                       XK_y,      setlayout,      {.v = &layouts[11]} },
 	{ MODKEY,                       XK_g,      setlayout,      {.v = &layouts[12]} },
 	{ MODKEY|ShiftMask,             XK_f,  		 setlayout,      		 {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
@@ -153,8 +154,8 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {1} }, 
-	{ MODKEY, 											XK_v, 		 spawn, 				 SHCMD("code")},
-	{ MODKEY, 											XK_p, 		 spawn, 				 SHCMD("firefox")},
+	{ MODKEY, 											XK_v, 		 spawn, 				 SHCMD("prime-run code")},
+	{ MODKEY, 											XK_p, 		 spawn, 				 SHCMD("prime-run firefox")},
 	{ MODKEY, 											XK_e, 		 spawn, 				 SHCMD("thunar")},
 	{ MODKEY, 											XK_t, 		 spawn, 				 SHCMD("/bin/kitty tmux attach")},
 	{ MODKEY|ShiftMask, 						XK_t, 		 spawn, 				 SHCMD("/bin/kitty tmux")},
