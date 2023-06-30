@@ -133,6 +133,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_w,      setlayout,      {.v = &layouts[3]} },
+	{ MODKEY,                       XK_y,      setlayout,      {.v = &layouts[11]} },
 	{ MODKEY,                       XK_g,      setlayout,      {.v = &layouts[12]} },
 	{ MODKEY|ShiftMask,             XK_f,  		 setlayout,      		 {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
@@ -164,7 +165,7 @@ static const Key keys[] = {
 	{ 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
 	{ 0, 														0x0000ff61, spawn, 				 SHCMD("flameshot gui") },
 	{ MODKEY, 											XK_n, 		 spawn, 				 SHCMD("pavucontrol") },
-	{ Mod1Mask, 											XK_l, 		 spawn, 				 SHCMD("slock") }
+	{ Mod1Mask, 										XK_l, 		 spawn, 				 SHCMD("slock") }
 };
 
 /* button definitions */
