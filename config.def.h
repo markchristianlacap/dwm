@@ -153,11 +153,10 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {1} }, 
-	{ MODKEY, 											XK_v, 		 spawn, 				 SHCMD("prime-run code")},
-	{ MODKEY, 											XK_p, 		 spawn, 				 SHCMD("prime-run firefox")},
+	{ MODKEY, 											XK_v, 		 spawn, 				 SHCMD("code")},
+	{ MODKEY, 											XK_p, 		 spawn, 				 SHCMD("firefox")},
 	{ MODKEY, 											XK_e, 		 spawn, 				 SHCMD("thunar")},
 	{ MODKEY, 											XK_t, 		 spawn, 				 SHCMD("/bin/kitty tmux attach")},
-	{ MODKEY|ShiftMask, 						XK_t, 		 spawn, 				 SHCMD("/bin/kitty tmux")},
 	{ MODKEY|ShiftMask, 						XK_t, 		 spawn, 				 SHCMD("/bin/kitty tmux")},
 	{ MODKEY|ShiftMask, 						XK_s, 		 spawn, 				 {.v = powermenu } },
 	{ 0,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
