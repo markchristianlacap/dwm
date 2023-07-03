@@ -81,7 +81,7 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod1Mask
+#define MODKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
@@ -96,6 +96,11 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *powermenu[] = { "/home/mark/.scripts/dmenu/powermenu.sh", NULL};
+/* Control Media Players */
+static const char *medplaypausecmd[] = { "playerctl", "play-pause", NULL };
+static const char *mednextcmd[] = { "playerctl", "next", NULL };
+static const char *medprevcmd[] = { "playerctl", "previous", NULL };
+
 #include "movestack.c"
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -165,7 +170,10 @@ static const Key keys[] = {
 	{ 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
 	{ 0, 														0x0000ff61, spawn, 				 SHCMD("flameshot gui") },
 	{ MODKEY, 											XK_n, 		 spawn, 				 SHCMD("pavucontrol") },
-	{ Mod1Mask, 										XK_l, 		 spawn, 				 SHCMD("slock") }
+	{ Mod1Mask, 										XK_l, 		 spawn, 				 SHCMD("slock") },
+	{ 0, XF86XK_AudioPlay, spawn, {.v = medplaypausecmd } },
+	{ 0, XF86XK_AudioNext, spawn, {.v = mednextcmd } },
+	{ 0, XF86XK_AudioPrev, spawn, {.v = medprevcmd } },
 };
 
 /* button definitions */
