@@ -22,8 +22,8 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;     /* 0 means no bar */
 static const int topbar             = 1;     /* 0 means bottom bar */
-static const char *fonts[]          = { "Inconsolata Nerd Font:size=10" };
-static const char dmenufont[]       = "Inconsolata Nerd Font:size=10";
+static const char *fonts[]          = { "SFMono Nerd Font Mono:size=10" };
+static const char dmenufont[]       = "SFMono Nerd Font Mono:size=10";
 static const char col_gray1[]       = "#1a1b26";
 static const char col_gray2[]       = "#44475a";
 static const char col_gray3[]       = "#f8f8f2";
@@ -49,6 +49,7 @@ static const Rule rules[] = {
 	{ "Firefox",  		 NULL,    NULL,       1 << 8,       0,           -1 },
 	{ "Blueberry.py",  NULL,  	NULL,       0,       			1,           -1 },
 	{ "Pavucontrol",   NULL,  	NULL,       0,       			1,           -1 },
+	{ "kitty",  			 NULL,  	NULL,       0,       			1,           -1 },
 };
 
 /* layout(s) */
