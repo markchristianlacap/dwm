@@ -49,6 +49,7 @@ static const Rule rules[] = {
 	{ "Firefox",  		 NULL,    NULL,       1 << 8,       0,           -1 },
 	{ "Blueberry.py",  NULL,  	NULL,       0,       			1,           -1 },
 	{ "Pavucontrol",   NULL,  	NULL,       0,       			1,           -1 },
+	{ "mpv",   				 NULL,  	NULL,       0,       			1,           -1 },
 };
 
 /* layout(s) */
@@ -138,8 +139,8 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_w,      setlayout,      {.v = &layouts[3]} },
+	{ MODKEY,                       XK_y,      setlayout,      {.v = &layouts[11]} },
 	{ MODKEY,                       XK_g,      setlayout,      {.v = &layouts[12]} },
-	{ MODKEY,                       XK_y,      setlayout,      {.v = &layouts[13]} },
 	{ MODKEY|ShiftMask,             XK_f,  		 setlayout,      		 {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
