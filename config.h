@@ -56,7 +56,7 @@ static const Rule rules[] = {
 	{ NULL,		  "spfm",			NULL,						SPTAG(1),	1,					 -1 },
 	{ NULL,		  "keepassxc",NULL,						SPTAG(2),	0,					 -1 },
 	{ NULL,      NULL,     "Event Tester", 	0,        0,          	0,           1,        -1 }, /* xev */
-	{ "Blueberry",NULL,			NULL,						0,				1,			 			-1 },
+	{ "Blueman-manager",NULL,			NULL,						0,				1,			 			-1 },
 	{ "Pavucontrol",NULL,		NULL,						0,				1,				 		-1 },
 	{ NULL, 		 NULL, 			"st-float", 		0, 				1, 						1},
 };
@@ -65,7 +65,7 @@ static const Rule rules[] = {
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
-static const int lockfullscreen = 0; /* 1 will force focus on the fullscreen window */
+static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
