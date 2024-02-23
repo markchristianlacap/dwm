@@ -57,6 +57,7 @@ static const Rule rules[] = {
 	{ NULL,		  "keepassxc",NULL,						SPTAG(2),	0,					 -1 },
 	{ NULL,      NULL,     "Event Tester", 	0,        0,          	0,           1,        -1 }, /* xev */
 	{ "Blueman-manager",NULL,			NULL,						0,				1,			 			-1 },
+	{ "Blueberry.py",NULL,			NULL,						0,				1,			 			-1 },
 	{ "Pavucontrol",NULL,		NULL,						0,				1,				 		-1 },
 	{ NULL, 		 NULL, 			"st-float", 		0, 				1, 						1},
 };
