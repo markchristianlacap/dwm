@@ -59,6 +59,8 @@ static const Rule rules[] = {
 	{ "Blueman-manager",NULL,			NULL,						0,				1,			 			-1 },
 	{ "Blueberry.py",NULL,			NULL,						0,				1,			 			-1 },
 	{ "Pavucontrol",NULL,		NULL,						0,				1,				 		-1 },
+	{ "Thunar",NULL,		NULL,						0,				1,				 		-1 },
+	{ "Viewnior",NULL,		NULL,						0,				1,				 		-1 },
 	{ NULL, 		 NULL, 			"st-float", 		0, 				1, 						1},
 };
 
