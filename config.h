@@ -58,6 +58,9 @@ static const Rule rules[] = {
   { NULL,      NULL,     "Event Tester",  0,            0,          0,          1,       -1,         0 }, /* xev */ 
   { "st-256color",        NULL,           NULL,         0,          0,          1,       -1,         0 }, /* xev */ 
   { NULL,       NULL,   "scratchpad",     0,            1,          1,          0,       -1,       's' }, 
+  { "Thunar",   NULL,     NULL,           0,            1,          0,          1,       -1,       0 }, 
+  { "pavucontrol",   NULL,     NULL,      0,            1,          0,          1,       -1,       0 }, 
+  { "Blueberry.py",   NULL,     NULL,     0,            1,          0,          1,       -1,       0 }, 
 };
 
 /* layout(s) */
