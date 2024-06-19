@@ -55,6 +55,9 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,         0,            1,          0,         0,        -1,        0  },
 	// { "firefox",  NULL,       NULL,         1 << 8,       0,          0,         -1,       -1,        0  },
 	{ NULL,       NULL,   "scratchpad",     0,            1,          1,          0,       -1,       's' }, 
+  { "St",      NULL,     NULL,            0,            0,          1,          0,       -1,        0 },
+  { NULL,      NULL,     "Event Tester",  0,            0,          0,          1,       -1,         0 }, /* xev */ 
+  { "st-256color",        NULL,           NULL,         0,          0,          1,       -1,         0 }, /* xev */ 
 };
 
 /* layout(s) */
