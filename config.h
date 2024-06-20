@@ -40,7 +40,7 @@ static const char col_crust[]      = "#11111b";
 static const char *colors[][3]      = {
     /*               fg           bg           border   */
     [SchemeNorm] = { col_text,    col_base,    col_surface0 },
-    [SchemeSel]  = { col_text,    col_blue,    col_blue  },
+    [SchemeSel]  = { col_text,    col_surface2,    col_blue  },
 };
 
 /* tagging */
@@ -52,15 +52,12 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating  isterminal noswallow monitor    scratch key */
-	{ "Gimp",     NULL,       NULL,         0,            1,          0,         0,        -1,        0  },
-	// { "firefox",  NULL,       NULL,         1 << 8,       0,          0,         -1,       -1,        0  },
-  { "St",      NULL,     NULL,            0,            0,          1,          0,       -1,        0 },
-  { NULL,      NULL,     "Event Tester",  0,            0,          0,          1,       -1,         0 }, /* xev */ 
-  { "st-256color",        NULL,           NULL,         0,          0,          1,       -1,         0 }, /* xev */ 
-  { NULL,       NULL,   "scratchpad",     0,            1,          1,          0,       -1,       's' }, 
-  { "Thunar",   NULL,     NULL,           0,            1,          0,          1,       -1,       0 }, 
-  { "pavucontrol",   NULL,     NULL,      0,            1,          0,          1,       -1,       0 }, 
-  { "Blueberry.py",   NULL,     NULL,     0,            1,          0,          1,       -1,       0 }, 
+	{ "Gimp",     NULL,       NULL,       0,            1,          0,          0,       -1,        0  },
+  { "st-256color",NULL,     NULL,       0,            0,          1,          1,       -1,        0 },
+  { NULL,       NULL,       "scratchpad", 0,          1,          1,          1,       -1,        's'}, 
+  { "Thunar",   NULL,       NULL,       0,            1,          0,          0,       -1,        0 }, 
+  { "pavucontrol", NULL,    NULL,       0,            1,          0,          0,       -1,        0 }, 
+  { "Blueberry.py", NULL,   NULL,       0,            1,          0,          0,       -1,        0 }, 
 };
 
 /* layout(s) */
