@@ -54,6 +54,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating  isterminal noswallow monitor    scratch key */
 	{ "Gimp",     NULL,       NULL,       0,            1,          0,          0,       -1,        0  },
   { "st-256color",NULL,     NULL,       0,            0,          1,          1,       -1,        0 },
+  { "st-256color",NULL,     "st-float", 0,            1,          1,          1,       -1,        0 },
   { NULL,       NULL,       "scratchpad", 0,          1,          1,          1,       -1,        's'}, 
   { "Thunar",   NULL,       NULL,       0,            1,          0,          0,       -1,        0 }, 
   { "pavucontrol", NULL,    NULL,       0,            1,          0,          0,       -1,        0 }, 
