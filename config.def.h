@@ -7,40 +7,18 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "SF Mono:size=10" };
-static const char dmenufont[]       = "SF Mono:size=10";
-/* Catppuccin Mocha Palette */
-static const char col_rosewater[]  = "#f5e0dc";
-static const char col_flamingo[]   = "#f2cdcd";
-static const char col_pink[]       = "#f5c2e7";
-static const char col_mauve[]      = "#cba6f7";
-static const char col_red[]        = "#f38ba8";
-static const char col_maroon[]     = "#eba0ac";
-static const char col_peach[]      = "#fab387";
-static const char col_yellow[]     = "#f9e2af";
-static const char col_green[]      = "#a6e3a1";
-static const char col_teal[]       = "#94e2d5";
-static const char col_sky[]        = "#89dceb";
-static const char col_sapphire[]   = "#74c7ec";
-static const char col_blue[]       = "#89b4fa";
-static const char col_lavender[]   = "#b4befe";
-static const char col_text[]       = "#cdd6f4";
-static const char col_subtext1[]   = "#bac2de";
-static const char col_subtext0[]   = "#a6adc8";
-static const char col_overlay2[]   = "#9399b2";
-static const char col_overlay1[]   = "#7f849c";
-static const char col_overlay0[]   = "#6c7086";
-static const char col_surface2[]   = "#585b70";
-static const char col_surface1[]   = "#45475a";
-static const char col_surface0[]   = "#313244";
-static const char col_base[]       = "#1e1e2e";
-static const char col_mantle[]     = "#181825";
-static const char col_crust[]      = "#11111b";
+static const char *fonts[]          = { "Iosevka:size=10" };
+static const char dmenufont[]       = "Iosevka:size=10";
 
-static const char *colors[][3]      = {
+static const char kanagawa_fg[]        = "#dcd7ba"; // Text color
+static const char kanagawa_bg[]        = "#1f1f28"; // Background color (Dark base)
+static const char kanagawa_border[]    = "#54546d"; // Inactive window border
+static const char kanagawa_accent[]    = "#7e9cd8"; // Accent color (Focused window border)
+
+static const char *colors[][3] = {
     /*               fg           bg           border   */
-    [SchemeNorm] = { col_text,    col_base,    col_surface0 },
-    [SchemeSel]  = { col_text,    col_surface2,    col_blue  },
+    [SchemeNorm] = { kanagawa_fg, kanagawa_bg, kanagawa_border }, // Unfocused windows
+    [SchemeSel]  = { kanagawa_fg, kanagawa_bg, kanagawa_accent }, // Focused window
 };
 
 /* tagging */
@@ -87,7 +65,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_base, "-nf", col_text, "-sb", col_blue, "-sf", col_text, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", kanagawa_bg, "-nf", kanagawa_fg, "-sb", kanagawa_accent, "-sf", kanagawa_fg, NULL };
 static const char *termcmd[]  = { "kitty", NULL };
 
 /*First arg only serves to match against key in rules*/
