@@ -31,7 +31,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating  isterminal noswallow monitor    scratch key */
 	{ "Gimp",     NULL,       NULL,       0,            1,          0,          0,       -1,        0  },
-  { "kitty",    NULL,       NULL,       0,            0,          1,          1,       -1,        0 },
+  { "ghostty",    NULL,       NULL,       0,            0,          1,          1,       -1,        0 },
   { NULL,       NULL,       "term-float",0,           1,          1,          1,       -1,        0 },
   { NULL,       NULL,       "scratchpad", 0,          1,          1,          1,       -1,        's'}, 
   { "Thunar",   NULL,       NULL,       0,            1,          0,          0,       -1,        0 }, 
@@ -66,7 +66,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", kanagawa_bg, "-nf", kanagawa_fg, "-sb", kanagawa_accent, "-sf", kanagawa_fg, NULL };
-static const char *termcmd[]  = { "kitty", NULL };
+static const char *termcmd[]  = { "ghostty", NULL };
 
 /*First arg only serves to match against key in rules*/
 static const char *scratchpadcmd[] = {"s", "kitty", "--title", "scratchpad", NULL}; 
