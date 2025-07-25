@@ -5,8 +5,8 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Monaspace Neon:size=10" };
-static const char dmenufont[]       = "Monaspace Neon:size=10";
+static const char *fonts[]          = { "Iosevka Nerd Font Mono:size=10" };
+static const char dmenufont[]       = "Iosevka Nerd Font Mono:size=10";
 static const char col_bg[]        = "#1f1f28"; // sumiInk0
 static const char col_fg[]        = "#dcd7ba"; // fujiWhite
 static const char col_black[]     = "#090618";
